@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:tns="http://ws.sample.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.sample.org/">
+  <xs:element name="doQuerySysStatus" type="tns:doQuerySysStatus"/>
+  <xs:element name="doQuerySysStatusResponse" type="tns:doQuerySysStatusResponse"/>
+  <xs:complexType name="doQuerySysStatus">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="doQuerySysStatusResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:long"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="node">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:element name="SoapFault" type="tns:SoapFault"/>
+  <xs:complexType name="SoapFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="version" type="xs:int"/>
+      <xs:element minOccurs="0" name="faultactor" type="xs:string"/>
+      <xs:element minOccurs="0" name="faultstring" type="xs:string"/>
+      <xs:element minOccurs="0" name="detail" type="tns:node"/>
+      <xs:element minOccurs="0" name="faultcode" type="xs:string"/>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
