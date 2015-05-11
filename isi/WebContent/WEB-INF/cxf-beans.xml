@@ -12,13 +12,5 @@
 		<jaxws:features>
 			<bean class="org.apache.cxf.feature.LoggingFeature" />
 		</jaxws:features>
-	</jaxws:endpoint>
-	<jaxws:endpoint xmlns:tns="http://ws.sample.org/" id="allegroservicetest"
-		implementor="org.sample.ws.AllegroServiceTestImpl" wsdlLocation="wsdl/allegroservicetestimpl.wsdl"
-		endpointName="tns:AllegroServiceTestImplPort" serviceName="tns:AllegroServiceTestImplService"
-		address="/AllegroServiceTestImplPort">
-		<jaxws:features>
-			<bean class="org.apache.cxf.feature.LoggingFeature" />
-		</jaxws:features>
-	</jaxws:endpoint>
+	</jaxws:endpoint>	
 </beans>
