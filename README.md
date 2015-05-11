@@ -8,3 +8,4 @@ apache-tomcat-7.0.61 -> C:\Apache\apache-tomcat-7.0.61
 No i uruchomiony / skonfigurowany Tomcat, jak w tutorialu:
 
 https://angelozerr.wordpress.com/2011/08/24/jaxwscxf_step2/
+Testować na Soap UI. Nie dziala poprzez uruchomienie linka w pasku przegladarki (No binding...).
